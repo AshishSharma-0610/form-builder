@@ -13,7 +13,7 @@ const FormRenderer = () => {
   useEffect(() => {
     const fetchForm = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/api/forms/${id}`);
+        const response = await axios.get(`https://form-builder-s08k.onrender.com/api/forms/${id}`);
         setForm(response.data);
         initializeAnswers(response.data.questions);
       } catch (error) {
@@ -47,7 +47,7 @@ const FormRenderer = () => {
 
   const handleSubmit = async () => {
     try {
-      await axios.post(`http://localhost:3000/api/forms/${id}/submit`, { answers });
+      await axios.post(`https://form-builder-s08k.onrender.com/api/forms/${id}/submit`, { answers });
       alert('Form submitted successfully!');
     } catch (error) {
       console.error('Error submitting form:', error);
