@@ -48,7 +48,7 @@ const FormEditor = () => {
 
     const saveForm = async () => {
         try {
-            const response = await axios.post('http://localhost:3000/api/forms', form);
+            const response = await axios.post('https://form-builder-s08k.onrender.com/api/forms', form);
             setFormId(response.data._id);
             alert('Form saved successfully!');
         } catch (error) {
