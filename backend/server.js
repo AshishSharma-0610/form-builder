@@ -8,7 +8,7 @@ const app = express();
 
 // CORS configuration
 const corsOptions = {
-    origin: 'https://form-builder-nu-eight.vercel.app/', // Frontend URL
+    origin: 'https://form-builder-nu-eight.vercel.app', // Frontend URL
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true,
